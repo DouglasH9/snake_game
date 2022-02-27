@@ -27,7 +27,7 @@ while game_on:
     time.sleep(0.1)
     snek.move_snake()
 
-#   collision detection
+#   collision detection with food
     if snek.head.distance(snek_food) < 15:
         snek_food.got_eaten()
         scoreboard.add_score()
